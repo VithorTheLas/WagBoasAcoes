@@ -14,7 +14,6 @@ interface BackgroundHandlerProps {
 
 const BackgroundHandler: React.FC<BackgroundHandlerProps> = ({ children }) => {
   const location = useLocation()
-  
   const routes: Route[] = [
     { path: '/', background: homeBg },
     { path: '/como-funciona', background: comoFuncionaBg }
@@ -23,20 +22,12 @@ const BackgroundHandler: React.FC<BackgroundHandlerProps> = ({ children }) => {
   const currentRoute = routes.find(route => route.path === location.pathname)
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div className={`relative min-h-screen ${currentRoute ? '' : 'bg-custom-blue'}`}>
       {currentRoute && (
         <img
           src={currentRoute.background}
           alt="Background"
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            zIndex: -1
-          }}
+          className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         />
       )}
       {children}
