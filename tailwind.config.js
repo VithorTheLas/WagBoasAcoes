@@ -8,7 +8,11 @@ export default {
     fontFamily: {
       'display': ['museo-sans'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'custom-blue': '#045CA3'
+      }
+    },
   },
   plugins: [],
 }
