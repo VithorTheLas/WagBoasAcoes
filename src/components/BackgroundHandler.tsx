@@ -22,7 +22,7 @@ const BackgroundHandler: React.FC<BackgroundHandlerProps> = ({ children }) => {
   const currentRoute = routes.find(route => route.path === location.pathname)
 
   return (
-    <div className={`relative min-h-screen ${currentRoute ? '' : 'bg-custom-blue'}`}>
+    <div className={`relative min-h-screen ${currentRoute ?? 'bg-custom-blue'}`}>
       {currentRoute && (
         <img
           src={currentRoute.background}
