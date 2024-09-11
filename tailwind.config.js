@@ -10,7 +10,8 @@ export default {
     },
     extend: {
       colors: {
-        'custom-blue': '#045CA3'
+        'custom-blue': '#045CA3',
+        'custom-blue-2': '#04559A',
       }
     },
   },
