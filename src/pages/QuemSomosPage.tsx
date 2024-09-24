@@ -6,7 +6,7 @@ const QuemSomosPage = () => {
     <>
       <div className="flex flex-col px-16">
         <iframe
-          className="h-[600px] w-auto rounded-3xl mt-16"
+          className="h-[37.5rem] w-auto rounded-3xl mt-16"
           src="https://www.youtube.com/embed/snYu2JUqSWs?si=sAjtQPaCiOf9nkdt"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -25,11 +25,11 @@ const QuemSomosPage = () => {
               solidariedade.
             </div>
           </div>
-          <Hands className="max-h-[480px] w-auto" aria-label="Hands" />
+          <Hands className="max-h-[30rem] w-auto" aria-label="Hands" />
         </div>
         <div className="flex px-36 space-x-40 mt-24 mb-20 justify-center">
           <WagComoFazemos
-            className="max-h-[580px] w-auto"
+            className="max-h-[36.25rem] w-auto"
             aria-label="WagComoFazemos"
           />
           <div className="flex flex-col space-y-9 text-white text-left">
