@@ -25,15 +25,12 @@ const QuemSomosPage = () => {
               solidariedade.
             </div>
           </div>
-          <Hands className="max-h-[30rem] w-auto" aria-label="Hands" />
+          <Hands aria-label="Hands" />
         </div>
         <div className="flex px-36 space-x-40 mt-24 mb-20 justify-center">
-          <WagComoFazemos
-            className="max-h-[36.25rem] w-auto"
-            aria-label="WagComoFazemos"
-          />
           <div className="flex flex-col space-y-9 text-white text-left">
             <div className="font-semibold text-6xl mt-20 max-w-md leading-tight">
+          <WagComoFazemos aria-label="WagComoFazemos" />
               Como fazemos isso
             </div>
             <div className="font-normal text-2xl max-w-md">
