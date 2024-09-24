@@ -13,7 +13,7 @@ const QuemSomosPage = () => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-        <div className="flex px-24 space-x-40 mt-24 justify-center">
+        <div className="flex justify-center px-24 mt-24">
           <div className="flex flex-col space-y-9 text-white text-left justify-center">
             <div className="font-semibold text-6xl max-w-xs leading-tight">
               Objetivo do WAG
@@ -25,15 +25,17 @@ const QuemSomosPage = () => {
               solidariedade.
             </div>
           </div>
+          <div className="w-24"></div>
           <Hands aria-label="Hands" />
         </div>
-        <div className="flex px-36 space-x-40 mt-24 mb-20 justify-center">
+        <div className="flex justify-center px-24 mt-24 mb-20">
           <WagComoFazemos aria-label="WagComoFazemos" />
-          <div className="flex flex-col space-y-9 text-white text-left justify-center">
-            <div className="font-semibold text-6xl max-w-md leading-tight">
+          <div className="w-24"></div>
+          <div className="flex flex-col space-y-9 text-white text-left justify-center max-w-md">
+            <div className="font-semibold text-6xl leading-tight">
               Como fazemos isso
             </div>
-            <div className="font-normal text-2xl max-w-md">
+            <div className="font-normal text-2xl">
               Conectando quem quer ajudar com quem precisa de ajuda. E
               compartilhando as boas ações para inspirar o próximo através de
               uma grande rede do bem.
