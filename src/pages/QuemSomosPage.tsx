@@ -14,8 +14,8 @@ const QuemSomosPage = () => {
           allowFullScreen
         ></iframe>
         <div className="flex px-24 space-x-40 mt-24 justify-center">
-          <div className="flex flex-col space-y-9 text-white text-left">
-            <div className="font-semibold text-6xl mt-20 max-w-xs leading-tight">
+          <div className="flex flex-col space-y-9 text-white text-left justify-center">
+            <div className="font-semibold text-6xl max-w-xs leading-tight">
               Objetivo do WAG
             </div>
             <div className="font-normal text-2xl max-w-md">
@@ -28,9 +28,9 @@ const QuemSomosPage = () => {
           <Hands aria-label="Hands" />
         </div>
         <div className="flex px-36 space-x-40 mt-24 mb-20 justify-center">
-          <div className="flex flex-col space-y-9 text-white text-left">
-            <div className="font-semibold text-6xl mt-20 max-w-md leading-tight">
           <WagComoFazemos aria-label="WagComoFazemos" />
+          <div className="flex flex-col space-y-9 text-white text-left justify-center">
+            <div className="font-semibold text-6xl max-w-md leading-tight">
               Como fazemos isso
             </div>
             <div className="font-normal text-2xl max-w-md">
