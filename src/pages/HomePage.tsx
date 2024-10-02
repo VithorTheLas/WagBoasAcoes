@@ -1,4 +1,4 @@
-import WagApp from "../assets/images/wag-app.png";
+import WagBoasAcoes from "../assets/images/wag-boas-acoes-2.svg?react";
 import AppStoreBadge from "../assets/images/apple-store-badge.svg?react";
 import GooglePlayBadge from "../assets/images/google-play-badge.svg?react";
 import Smartphone from "../assets/images/smartphone.png";
@@ -7,9 +7,12 @@ import HandsHeart from "../assets/images/hands-heart.png";
 const HomePage = () => {
   return (
     <>
-      <div className="flex space-x-24 mt-44 mx-6 mb-56 justify-center">
-        <img className="h-44 w-auto mt-2" src={WagApp} alt="WagApp" />
-        <div className="flex flex-col space-y-4 text-white text-left">
+      <div className="flex justify-center gap-24 mt-44 px-6 mb-56">
+        <WagBoasAcoes
+          className="h-44 w-auto mt-2"
+          aria-label="Wag Boas Ações"
+        />
+        <div className="flex flex-col gap-4 text-white text-left">
           <div className="font-semibold text-7xl leading-tight max-w-lg">
             O ser humano é bom.
           </div>
@@ -21,7 +24,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="flex bg-white justify-center space-x-40">
+      <div className="flex justify-center bg-white gap-40">
         <div className="flex flex-col text-custom-blue-2 leading-normal pb-24">
           <div className="font-normal text-base mt-24 max-w-sm">
             Faça parte da nossa rede. Entre para a WAG e seja um Agente do bem.
