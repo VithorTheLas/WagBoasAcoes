@@ -186,7 +186,7 @@ const ComoFuncionaPage = () => {
         </div>
       </div>
       <div className="flex justify-center items-center gap-20 bg-custom-blue px-[9rem] pt-[6.75rem] pb-[11.25rem]">
-        <WagEmpresas aria-label="Wag Empresas Logo" />
+        <WagEmpresas className="h-auto w-36" aria-label="Wag Empresas Logo" />
         <div className="flex flex-col text-white gap-8 text-left">
           <div className="font-semibold text-[3.5rem]">WAG Empresa</div>
           <div className="font-normal text-2xl max-w-[25.125rem] leading-tight">
