@@ -29,7 +29,7 @@ const BackgroundHandler: React.FC<BackgroundHandlerProps> = ({ children }) => {
         <img
           src={currentRoute.background}
           alt="Background"
-          className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+          className="absolute w-full h-auto object-cover -z-10"
         />
       )}
       {children}
