@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react'
-import { useLocation } from 'react-router-dom'
-import homeBg from '../assets/images/home-bg.png'
-import comoFuncionaBg from "../assets/images/como-funciona-bg.png"
+import React, { ReactNode } from "react";
+import { useLocation } from "react-router-dom";
+import homeBg from "../assets/images/home-bg.png";
+import comoFuncionaBg from "../assets/images/como-funciona-bg.png";
 
 interface Route {
   path: string;
@@ -13,16 +13,18 @@ interface BackgroundHandlerProps {
 }
 
 const BackgroundHandler: React.FC<BackgroundHandlerProps> = ({ children }) => {
-  const location = useLocation()
+  const location = useLocation();
   const routes: Route[] = [
-    { path: '/', background: homeBg },
-    { path: '/como-funciona', background: comoFuncionaBg }
-  ]
+    { path: "/", background: homeBg },
+    { path: "/como-funciona", background: comoFuncionaBg },
+  ];
 
-  const currentRoute = routes.find(route => route.path === location.pathname)
+  const currentRoute = routes.find((route) => route.path === location.pathname);
 
   return (
-    <div className={`relative min-h-screen ${currentRoute ?? 'bg-custom-blue'}`}>
+    <div
+      className={`relative min-h-screen ${currentRoute ?? "bg-custom-blue"}`}
+    >
       {currentRoute && (
         <img
           src={currentRoute.background}
@@ -32,7 +34,7 @@ const BackgroundHandler: React.FC<BackgroundHandlerProps> = ({ children }) => {
       )}
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default BackgroundHandler
+export default BackgroundHandler;
