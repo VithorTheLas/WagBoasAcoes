@@ -17,7 +17,7 @@ import Handshake from "../assets/images/handshake.svg?react";
 const ComoFuncionaPage = () => {
   return (
     <>
-      <div className="flex flex-col space-y-[4.5rem] py-[8rem] px-6">
+      <div className="flex flex-col space-y-16 py-32 px-6">
         <div className="font-semibold text-white text-[3.5rem]">
           Como a nossa rede funciona
         </div>
@@ -56,14 +56,14 @@ const ComoFuncionaPage = () => {
             <CellOnHandWithLogo aria-label="Cell on hand with logo" />
             <div className="flex flex-col text-white gap-8 text-left">
               <div className="font-semibold text-[3.5rem]">Wag app</div>
-              <div className="font-normal text-2xl max-w-[35rem] leading-tight">
+              <div className="font-normal text-2xl max-w-xl leading-tight">
                 O nosso app é uma plataforma do bem para tornar mais fácil a
                 conexão de quem quer ajudar com quem precisa de ajuda. Criando
                 um ciclo contínuo de solidariedade no Brasil.
               </div>
             </div>
           </div>
-          <div className="max-w-[15.25rem] font-semibold text-white text-2xl max-w-[15rem] leading-tight text-center">
+          <div className="font-semibold text-white text-2xl max-w-60 leading-tight text-center">
             Conheça o app e suas funcionalidades
           </div>
           <ArrowDown className="mt-6 mb-14" aria-label="Arrow Down" />
@@ -81,7 +81,7 @@ const ComoFuncionaPage = () => {
               </div>
             </div>
             <AppHomeScreenshot aria-label="App Home Screenshot" />
-            <div className="flex flex-col text-custom-blue leading-tight gap-6 max-w-[28.625rem] text-left self-center">
+            <div className="flex flex-col text-custom-blue leading-tight gap-6 max-w-md text-left self-center">
               <div className="text-[2rem] font-semibold">
                 Acreditamos que uma boa ação quando compartilhada inspira outras
                 pessoas a fazerem o mesmo.
@@ -95,7 +95,7 @@ const ComoFuncionaPage = () => {
           {/* second box */}
           <div className="flex justify-between pt-8">
             <div className="flex justify-center gap-14">
-              <div className="w-[6.5rem]"></div>
+              <div className="w-24"></div>
               <div className="flex flex-col gap-4 items-center">
                 <WagMoedas aria-label="Wag Moedas" />
                 <div className="text-custom-gray font-bold text-2xl max-w-52">
@@ -103,10 +103,10 @@ const ComoFuncionaPage = () => {
                 </div>
               </div>
               <div className="flex flex-col text-custom-blue leading-tight gap-6 text-left self-start pl-16">
-                <div className="text-[2rem] font-semibold max-w-[22.5rem]">
+                <div className="text-[2rem] font-semibold max-w-96">
                   Toda boa ação e doação recompensa.
                 </div>
-                <div className="text-2xl font-normal max-w-[32.25rem]">
+                <div className="text-2xl font-normal max-w-lg">
                   A cada boa ação e doação compartilhada você ganha uma moeda
                   WAG azul ou verde, que pode ser trocada por benefícios dos
                   nossos parceiros.
@@ -114,19 +114,19 @@ const ComoFuncionaPage = () => {
               </div>
             </div>
             <div className="flex flex-end">
-              <div className="text-custom-gray font-bold text-2xl max-w-[12rem] pb-16 self-end">
+              <div className="text-custom-gray font-bold text-2xl max-w-48 pb-16 self-end">
                 Encontre necessidades que precisam muito de ajuda
               </div>
-              <div className="w-[9.25rem]"></div>
+              <div className="w-36"></div>
             </div>
           </div>
           {/* third box */}
           <div className="flex justify-end gap-16">
             <div className="flex flex-col text-custom-blue leading-tight gap-6 text-right pt-10">
-              <div className="text-[2rem] font-semibold max-w-[18.375rem] self-end">
+              <div className="text-[2rem] font-semibold max-w-72 self-end">
                 Curadoria em parcerias do bem.
               </div>
-              <div className="text-2xl font-normal max-w-[27rem] self-end">
+              <div className="text-2xl font-normal max-w-md self-end">
                 A rede WAG tem um grande processo de parcerias e curadoria para
                 conectar você a diversas instituições, e agentes do bem que
                 precisam de ajuda.
@@ -137,24 +137,24 @@ const ComoFuncionaPage = () => {
                 className="-mt-12"
                 aria-label="Cell on hand with hand"
               />
-              <div className="w-[11.75rem]"></div>
+              <div className="w-48"></div>
             </div>
           </div>
           {/* fourth box */}
           <div className="flex justify-center px-16 pt-9 mb-20">
-            <div className="flex flex-col gap-[9rem] mb-[9rem]">
-              <div className="flex flex-col text-custom-blue leading-tight gap-6 text-right pt-[5.25rem]">
-                <div className="text-[2rem] font-semibold self-end max-w-[28.5rem]">
+            <div className="flex flex-col gap-36 mb-36">
+              <div className="flex flex-col text-custom-blue leading-tight gap-6 text-right pt-20 max-w-md">
+                <div className="text-[2rem] font-semibold self-end">
                   Uma plataforma que conecta quem quer ajudar com quem precisa
                   de ajuda.
                 </div>
-                <div className="text-2xl font-normal self-end max-w-[27rem]">
+                <div className="text-2xl font-normal self-end">
                   Através do app WAG você tem acesso e pode contribuir com
                   diversas causas sem nenhum tipo de custo.
                 </div>
               </div>
               <div className="flex flex-col items-center gap-6">
-                <div className="text-custom-gray font-bold text-2xl max-w-[12rem]">
+                <div className="text-custom-gray font-bold text-2xl max-w-48">
                   Faça doações e ajude pessoas e instituições
                 </div>
                 <Hands aria-label="Hands touching" />
@@ -165,16 +165,16 @@ const ComoFuncionaPage = () => {
             </div>
             <div className="flex flex-col justify-end">
               <div className="flex flex-col gap-8 items-start pl-10">
-                <div className="text-custom-gray font-bold text-2xl max-w-[13.25rem]">
+                <div className="text-custom-gray font-bold text-2xl max-w-52">
                   Compartilhe iniciativas do bem
                 </div>
                 <HandsFistbump aria-label="Hands fistbump" />
               </div>
-              <div className="flex flex-col text-custom-blue leading-tight gap-6 text-left pt-[5.25rem]">
-                <div className="text-[2rem] font-semibold max-w-[22rem]">
+              <div className="flex flex-col text-custom-blue leading-tight gap-6 text-left pt-20">
+                <div className="text-[2rem] font-semibold max-w-sm">
                   Na WAG é mais fácil compartilhar o bem
                 </div>
-                <div className="text-2xl font-normal max-w-[27rem]">
+                <div className="text-2xl font-normal max-w-md">
                   Em apenas um clique você compartilha as campanhas de doação
                   dos nossos parceiros e ajudar a trazer mais gente para nossa
                   rede.
@@ -185,11 +185,11 @@ const ComoFuncionaPage = () => {
           {/* path end */}
         </div>
       </div>
-      <div className="flex justify-center items-center gap-20 bg-custom-blue px-[9rem] pt-[6.75rem] pb-[11.25rem]">
+      <div className="flex justify-center items-center gap-20 bg-custom-blue px-36 pt-28 pb-44">
         <WagEmpresas className="h-auto w-36" aria-label="Wag Empresas Logo" />
         <div className="flex flex-col text-white gap-8 text-left">
           <div className="font-semibold text-[3.5rem]">WAG Empresa</div>
-          <div className="font-normal text-2xl max-w-[25.125rem] leading-tight">
+          <div className="font-normal text-2xl max-w-sm leading-tight">
             Um braço focado em criar ferramentas que promovam a cultura da
             solidariedade em empresas, o S do ESG na prática.
           </div>
