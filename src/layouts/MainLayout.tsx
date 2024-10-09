@@ -1,7 +1,7 @@
-import React from 'react'
-import NavBar from '../components/NavBar'
-import { Outlet } from 'react-router-dom'
-import BackgroundHandler from '../components/BackgroundHandler'
+import React from "react";
+import NavBar from "../components/NavBar";
+import { Outlet } from "react-router-dom";
+import BackgroundHandler from "../components/BackgroundHandler";
 
 const MainLayout: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const MainLayout: React.FC = () => {
       <NavBar />
       <Outlet />
     </BackgroundHandler>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

@@ -2,7 +2,7 @@ import WagBoasAcoes from "../assets/images/wag-boas-acoes-2.svg?react";
 import AppStoreBadge from "../assets/images/apple-store-badge.svg?react";
 import GooglePlayBadge from "../assets/images/google-play-badge.svg?react";
 import Smartphone from "../assets/images/smartphone.png";
-import HandsHeart from "../assets/images/hands-heart.png";
+import HandsHearts from "../assets/images/hands-hearts-2.svg?react";
 
 const HomePage = () => {
   return (
@@ -41,10 +41,9 @@ const HomePage = () => {
         </div>
         <div className="-mt-40 relative">
           <img className="h-auto w-80" src={Smartphone} alt="Smartphone" />
-          <img
-            className="h-auto w-72 absolute bottom-0 ml-8"
-            src={HandsHeart}
-            alt="HandsHeart"
+          <HandsHearts
+            className="absolute bottom-0 ml-10"
+            aria-label="Hands heart"
           />
         </div>
       </div>
