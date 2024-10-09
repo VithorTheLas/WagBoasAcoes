@@ -22,17 +22,17 @@ const InputText: React.FC<InputTextProps> = ({
   };
 
   return (
-    <div>
-      <div className="text-base font-normal mb-2">{label}</div>
+    <label className="text-base font-normal">
+      {label}
       <input
         type={type}
         id={id}
-        className="border border-white rounded-lg bg-custom-blue w-full py-3 px-4 text-white placeholder-gray-300"
+        className="border border-white rounded-lg bg-custom-blue w-full py-3 px-4 text-white placeholder-gray-300 mt-2"
         required={required}
         value={value}
         onChange={handleChange}
       />
-    </div>
+    </label>
   );
 };
 
