@@ -5,9 +5,9 @@ import Instagram from "../assets/images/insta.svg?react";
 import MultipleHands from "../assets/images/multiple-hands.png";
 import CellOnHandWithLogo from "../assets/images/cellphone-on-hand-with-logo.svg?react";
 import ArrowDown from "../assets/images/arrow-down.svg?react";
-import HandsHearts from "../assets/images/hands-hearts.svg?react";
+import HandsHearts from "../assets/images/hands-hearts.png";
 import AppHomeScreenshot from "../assets/images/app-home-screenshot.svg?react";
-import WagMoedas from "../assets/images/moedas-wag.svg?react";
+import WagMoedas from "../assets/images/moedas-wag.png";
 import CellOnHandWithHand from "../assets/images/cellphone-on-hand-with-hand.svg?react";
 import Hands from "../assets/images/hands-2.svg?react";
 import AppSearchScreenshot from "../assets/images/app-search-screenshot.svg?react";
@@ -75,7 +75,11 @@ const ComoFuncionaPage = () => {
           {/* first box */}
           <div className="flex justify-center">
             <div className="flex flex-col gap-4 items-center">
-              <HandsHearts className="pt-8" aria-label="Hands Hearts" />
+              <img
+                src={HandsHearts}
+                className="pt-8"
+                aria-label="Hands Hearts"
+              />
               <div className="text-custom-gray font-bold text-2xl max-w-52">
                 Baixe o app e conheça a WAG
               </div>
@@ -97,7 +101,11 @@ const ComoFuncionaPage = () => {
             <div className="flex justify-center gap-14">
               <div className="w-24"></div>
               <div className="flex flex-col gap-4 items-center">
-                <WagMoedas aria-label="Wag Moedas" />
+                <img
+                  className="h-64 w-auto"
+                  src={WagMoedas}
+                  aria-label="Wag Moedas"
+                />
                 <div className="text-custom-gray font-bold text-2xl max-w-52">
                   Ganhe moedas do bem a cada boa ação ou doação
                 </div>
