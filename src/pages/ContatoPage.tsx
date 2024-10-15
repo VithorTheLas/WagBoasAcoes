@@ -107,7 +107,7 @@ const ContatoPage = () => {
             </div>
             <div className="flex justify-end">
               <button
-                className="bg-white text-custom-blue p-4 rounded-lg font-semibold text-2xl"
+                className="w-full md:w-auto bg-white text-custom-blue p-4 rounded-lg font-semibold text-2xl"
                 type="submit"
               >
                 Enviar
