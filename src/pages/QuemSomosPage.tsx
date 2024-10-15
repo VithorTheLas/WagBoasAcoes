@@ -4,7 +4,7 @@ import WagComoFazemos from "../assets/images/wag-como-fazemos.svg?react";
 const QuemSomosPage = () => {
   return (
     <>
-      <div className="flex flex-col px-16">
+      <div className="flex flex-col px-6 md:px-16">
         <iframe
           className="h-[37.5rem] w-auto rounded-3xl mt-16"
           src="https://www.youtube.com/embed/snYu2JUqSWs?si=sAjtQPaCiOf9nkdt"
@@ -13,7 +13,7 @@ const QuemSomosPage = () => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-        <div className="flex justify-center px-24 mt-24">
+        <div className="flex flex-col md:flex-row justify-center gap-y-8 md:gap-x-40 px-6 mt-24">
           <div className="flex flex-col space-y-9 text-white text-left justify-center">
             <div className="font-semibold text-6xl max-w-xs leading-tight">
               Objetivo do WAG
@@ -25,13 +25,11 @@ const QuemSomosPage = () => {
               solidariedade.
             </div>
           </div>
-          <div className="w-24"></div>
-          <Hands aria-label="Hands" />
+          <Hands className="w-auto" aria-label="Hands" />
         </div>
-        <div className="flex justify-center px-24 mt-24 mb-20">
-          <WagComoFazemos aria-label="WagComoFazemos" />
-          <div className="w-24"></div>
-          <div className="flex flex-col space-y-9 text-white text-left justify-center max-w-md">
+        <div className="flex flex-col-reverse md:flex-row justify-center px-6 mb-20 gap-y-8 mt-4 md:mt-24 md:gap-x-28">
+          <WagComoFazemos className="w-auto" aria-label="WagComoFazemos" />
+          <div className="flex flex-col space-y-9 text-white text-left justify-center max-w-sm">
             <div className="font-semibold text-6xl leading-tight">
               Como fazemos isso
             </div>
