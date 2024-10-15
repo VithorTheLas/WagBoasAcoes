@@ -4,7 +4,7 @@ const ComoSurgiuPage = () => {
   return (
     <>
       <div className="flex justify-evenly gap-x-24 px-24 py-20 items-center">
-        <CarFix aria-label="Car fix" />
+        <CarFix className="hidden md:flex" aria-label="Car fix" />
         <div className="flex flex-col gap-8 text-white leading-tight text-left">
           <div className="text-[3.5rem] font-bold max-w-3xl">
             Pequenas ações fazem grandes diferenças
