@@ -15,6 +15,8 @@ export default {
         'custom-gray': '#969696',
       },
       backgroundImage: {
+        'home-people': "url('assets/images/home-bg.png')",
+        'como-funciona-hands': "url('assets/images/como-funciona-bg.png')",
         'como-funciona-path': "url('assets/images/path.svg')"
       }
     },
