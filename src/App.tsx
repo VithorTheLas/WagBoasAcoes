@@ -27,7 +27,11 @@ function App() {
     )
   );
 
-  return <RouterProvider router={router} />;
+  return (
+    <div className="bg-custom-blue w-screen and min-h-screen">
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;
