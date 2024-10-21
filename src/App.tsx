@@ -11,7 +11,6 @@ import QuemSomosPage from "./pages/QuemSomosPage";
 import ComoFuncionaPage from "./pages/ComoFuncionaPage";
 import ComoSurgiuPage from "./pages/ComoSurgiuPage";
 import ContatoPage from "./pages/ContatoPage";
-import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   const router = createBrowserRouter(
@@ -22,12 +21,16 @@ function App() {
         <Route path="/como-funciona" element={<ComoFuncionaPage />} />
         <Route path="/como-surgiu" element={<ComoSurgiuPage />} />
         <Route path="/contato" element={<ContatoPage />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<HomePage />} />
       </Route>
     )
   );
 
-  return <RouterProvider router={router} />;
+  return (
+    <div className="bg-custom-blue w-screen and min-h-screen">
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;
