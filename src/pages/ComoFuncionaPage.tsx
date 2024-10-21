@@ -55,7 +55,7 @@ const ComoFuncionaPage = () => {
             />
             <div className="flex flex-col text-white gap-y-8 text-center md:text-left">
               <div className="font-semibold text-[3.5rem]">Wag app</div>
-              <div className="font-normal text-2xl max-w-xl leading-tight">
+              <div className="font-normal text-2xl max-w-xl leading-tight px-8 md:px-0">
                 O nosso app é uma plataforma do bem para tornar mais fácil a
                 conexão de quem quer ajudar com quem precisa de ajuda. Criando
                 um ciclo contínuo de solidariedade no Brasil.
@@ -85,7 +85,7 @@ const ComoFuncionaPage = () => {
               className="hidden md:flex"
               aria-label="App Home Screenshot"
             />
-            <div className="flex flex-col text-custom-blue leading-tight gap-y-6 max-w-md text-left self-center text-center md:text-left">
+            <div className="flex flex-col text-custom-blue leading-tight gap-y-6 max-w-md text-left self-center text-center md:text-left px-8 md:px-0">
               <div className="text-[2rem] font-semibold">
                 Acreditamos que uma boa ação quando compartilhada inspira outras
                 pessoas a fazerem o mesmo.
@@ -105,11 +105,11 @@ const ComoFuncionaPage = () => {
                   Ganhe moedas do bem a cada boa ação ou doação
                 </div>
               </div>
-              <div className="flex flex-col text-custom-blue leading-tight gap-y-6 text-left px-8 md:px-0 ml-0 md:ml-14 md:ml-0 mt-8 md:mt-0">
-                <div className="text-[2rem] font-semibold max-w-96">
+              <div className="flex flex-col text-custom-blue leading-tight gap-y-6 text-center md:text-left px-8 md:px-0 ml-0 md:ml-14 md:ml-0 mt-8 md:mt-0">
+                <div className="text-[2rem] font-semibold max-w-96 self-center md:self-start">
                   Toda boa ação e doação recompensa.
                 </div>
-                <div className="text-2xl font-normal max-w-lg">
+                <div className="text-2xl font-normal max-w-lg self-center md:self-start">
                   A cada boa ação e doação compartilhada você ganha uma moeda
                   WAG azul ou verde, que pode ser trocada por benefícios dos
                   nossos parceiros.
@@ -122,11 +122,11 @@ const ComoFuncionaPage = () => {
           </div>
           {/* third box */}
           <div className="flex justify-end gap-x-8 md:gap-x-16">
-            <div className="flex flex-col text-custom-blue leading-tight gap-y-6 text-right pt-10">
-              <div className="text-[2rem] font-semibold max-w-72 self-end">
+            <div className="flex flex-col text-custom-blue leading-tight gap-y-6 text-center md:text-right pt-10 px-8 md:px-0">
+              <div className="text-[2rem] font-semibold max-w-72 self-center md:self-end">
                 Curadoria em parcerias do bem.
               </div>
-              <div className="text-2xl font-normal max-w-md self-end">
+              <div className="text-2xl font-normal max-w-md self-center md:self-end">
                 A rede WAG tem um grande processo de parcerias e curadoria para
                 conectar você a diversas instituições, e agentes do bem que
                 precisam de ajuda.
