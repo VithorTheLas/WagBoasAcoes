@@ -31,11 +31,23 @@ const HomePage = () => {
           </div>
           <div className="font-semibold text-5xl mt-12">Baixe o app</div>
           <div className="flex mt-8 space-x-4 self-center">
-            <GooglePlayBadge
-              className="h-12 w-full"
-              aria-label="Android Badge"
-            />
-            <AppStoreBadge className="h-12 w-full" aria-label="iOS Badge" />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.guaranadigital.wag"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <GooglePlayBadge
+                className="h-12 w-full"
+                aria-label="Android Badge"
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/wearegood/id1516113992"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AppStoreBadge className="h-12 w-full" aria-label="iOS Badge" />
+            </a>
           </div>
         </div>
         <div className="hidden md:flex md:-mt-40 md:relative">
