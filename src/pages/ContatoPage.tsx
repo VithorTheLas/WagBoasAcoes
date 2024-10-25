@@ -5,16 +5,34 @@ import WhatsAppIcon from "../assets/images/whatsapp-icon.png";
 import { useState } from "react";
 import Checkbox from "../components/Checkbox";
 import InputText from "../components/InputText";
+import { FormData } from "../services/form-api";
 
-const ContatoPage = () => {
+const ContatoPage = ({ sendForm }: { sendForm: (form: FormData) => void }) => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [telephone, setTelephone] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  const [subscribeNewsletter, setSubscribeNewsletter] =
+    useState<boolean>(false);
+
+  const handleSubscribeChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setSubscribeNewsletter(event.target.checked);
+  };
 
   const submitForm = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // TODO: send form with info
+
+    const form: FormData = {
+      name,
+      email,
+      telephone,
+      message,
+      subscribeNewsletter,
+    };
+
+    sendForm(form);
   };
 
   return (
@@ -34,26 +52,28 @@ const ContatoPage = () => {
           </div>
           <div className="font-bold pt-5">REDES SOCIAIS</div>
           <div className="flex gap-x-8">
-            <img
-              className="h-14 w-auto"
-              src={InstagramIcon}
-              alt="Instagram Icon"
-            />
-            <img
-              className="h-14 w-auto"
-              src={FacebookIcon}
-              alt="Facebook Icon"
-            />
-            <img
-              className="h-14 w-auto"
-              src={LinkedInIcon}
-              alt="LinkedIn Icon"
-            />
-            <img
-              className="h-14 w-auto"
-              src={WhatsAppIcon}
-              alt="WhatsApp Icon"
-            />
+            <a
+              href="https://www.instagram.com/wag_rededobem?igsh=aTl1dGs3enRoaGV0"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                className="h-14 w-auto"
+                src={InstagramIcon}
+                alt="Instagram Icon"
+              />
+            </a>
+            <a
+              href="https://wa.me/5551995245265"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                className="h-14 w-auto"
+                src={WhatsAppIcon}
+                alt="WhatsApp Icon"
+              />
+            </a>
           </div>
         </div>
         <div className="flex flex-col text-white max-w-lg leading-tight text-start">
@@ -92,7 +112,7 @@ const ContatoPage = () => {
               />
             </div>
             <div className="flex items-start gap-x-3">
-              <Checkbox />
+              <Checkbox onChange={handleSubscribeChange} />
               <div className="font-light">
                 Desejo receber informações sobre a WAG e suas empresas.
               </div>
@@ -107,7 +127,7 @@ const ContatoPage = () => {
             </div>
             <div className="flex justify-end">
               <button
-                className="w-full md:w-auto bg-white text-custom-blue p-4 rounded-lg font-semibold text-2xl"
+                className="w-full md:w-auto bg-white text-custom-blue p-4 rounded-lg font-semibold text-2xl hover:bg-custom-gray hover:text-white active:bg-custom-dark-blue active:text-custom-blue"
                 type="submit"
               >
                 Enviar
