@@ -7,7 +7,7 @@ const QuemSomosPage = () => {
       <div className="flex flex-col px-6 md:px-16">
         <iframe
           className="h-[37.5rem] w-auto rounded-3xl mt-16"
-          src="https://www.youtube.com/embed/snYu2JUqSWs?si=sAjtQPaCiOf9nkdt"
+          src="https://www.youtube.com/embed/6tjm65z_dCg"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
