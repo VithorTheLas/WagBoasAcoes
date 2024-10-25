@@ -2,18 +2,19 @@ import React, { useState } from "react";
 
 interface CheckboxProps {
   required?: boolean;
-  checked?: boolean;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({
-  required = false,
-  checked = false,
-}) => {
-  const [isChecked, setIsChecked] = useState(checked);
+const Checkbox: React.FC<CheckboxProps> = ({ required = false, onChange }) => {
+  const [isChecked, setIsChecked] = useState(false);
 
-  const handleToggle = () => {
+  const handleToggle = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newChecked = !isChecked;
     setIsChecked(newChecked);
+
+    if (onChange) {
+      onChange(event);
+    }
   };
 
   return (
