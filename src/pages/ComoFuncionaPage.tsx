@@ -35,12 +35,17 @@ const ComoFuncionaPage = () => {
               parceiros que fazem acontecer. Ajudando quem quer doar e quem
               precisa.
             </div>
-            <div className="flex flex-col text-center gap-3 items-center">
+            <a
+              className="flex flex-col text-center gap-3 items-center"
+              href="https://www.instagram.com/wag_rededobem?igsh=aTl1dGs3enRoaGV0"
+              rel="noreferrer"
+              target="_blank"
+            >
               <Instagram aria-label="Instagram" />
               <div className="text-custom-blue-2 font-semibold max-w-52 text-base leading-tight">
                 Clique aqui para acessar o nosso Instagram e conhecer mais
               </div>
-            </div>
+            </a>
           </div>
           <img className="max-h-60" src={MultipleHands} alt="Multiple Hands" />
         </div>
