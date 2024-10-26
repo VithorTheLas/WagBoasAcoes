@@ -7,7 +7,6 @@ import CellOnHandWithLogo from "../assets/images/cellphone-on-hand-with-logo.svg
 import ArrowDown from "../assets/images/arrow-down.svg?react";
 import HandsHearts from "../assets/images/hands-hearts.png";
 import AppHomeScreenshot from "../assets/images/app-home-screenshot.svg?react";
-import WagMoedas from "../assets/images/moedas-wag.png";
 import CellOnHandWithHand from "../assets/images/cellphone-on-hand-with-hand.svg?react";
 import Hands from "../assets/images/hands-2.svg?react";
 import AppSearchScreenshot from "../assets/images/app-search-screenshot.svg?react";
@@ -70,8 +69,8 @@ const ComoFuncionaPage = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white justify-center pt-20 pb-20">
-        <div className="bg-no-repeat w-full h-auto bg-center md:bg-como-funciona-path">
+      <div className="bg-white justify-center">
+        <div className="bg-no-repeat bg-center md:bg-como-funciona-path pt-40">
           {/* path start */}
           {/* first box */}
           <div className="flex flex-col justify-center gap-y-8 md:flex-row">
@@ -101,86 +100,59 @@ const ComoFuncionaPage = () => {
             </div>
           </div>
           {/* second box */}
-          <div className="flex flex-col md:flex-row justify-between pt-8 gap-y-8">
-            <div className="flex flex-col md:flex-row justify-center gap-x-14 gap-y-4">
-              <div className="flex flex-col justify-center md:justify-start gap-y-4 items-center md:ml-24">
-                <img
-                  className="h-64 w-auto"
-                  src={WagMoedas}
-                  aria-label="Wag Moedas"
-                />
-                <div className="text-custom-gray font-bold text-2xl max-w-52">
-                  Ganhe moedas do bem a cada boa ação ou doação
-                </div>
+          <div className="flex flex-col md:flex-row justify-center gap-x-8 md:gap-x-16 pt-16 pl-0 md:pl-32">
+            <div className="flex flex-col gap-y-7">
+              <div className="flex text-custom-gray font-bold text-2xl max-w-48 self-center ml-0 md:ml-10">
+                Encontre necessidades que precisam muito de ajuda
               </div>
-              <div className="flex flex-col text-custom-blue leading-tight gap-y-6 text-center md:text-left px-8 md:px-0 ml-0 md:ml-14 md:ml-0 mt-8 md:mt-0">
-                <div className="text-[2rem] font-semibold max-w-96 self-center md:self-start">
-                  Toda boa ação e doação recompensa.
-                </div>
-                <div className="text-2xl font-normal max-w-lg self-center md:self-start">
-                  A cada boa ação e doação compartilhada você ganha uma moeda
-                  WAG azul ou verde, que pode ser trocada por benefícios dos
-                  nossos parceiros.
-                </div>
-              </div>
+              <CellOnHandWithHand
+                className="hidden md:flex"
+                aria-label="Cell on hand with hand"
+              />
             </div>
-            <div className="flex justify-center md:justify-end text-custom-gray font-bold text-2xl max-w-48 pb-16 self-center mt-8 md:self-end md:mr-36">
-              Encontre necessidades que precisam muito de ajuda
-            </div>
-          </div>
-          {/* third box */}
-          <div className="flex justify-end gap-x-8 md:gap-x-16">
-            <div className="flex flex-col text-custom-blue leading-tight gap-y-6 text-center md:text-right pt-10 px-8 md:px-0">
-              <div className="text-[2rem] font-semibold max-w-72 self-center md:self-end">
+            <div className="flex flex-col text-custom-blue leading-tight gap-y-6 text-center md:text-left pt-16 md:pt-2 px-8 md:px-0">
+              <div className="text-[2rem] font-semibold max-w-72 self-center md:self-start">
                 Curadoria em parcerias do bem.
               </div>
-              <div className="text-2xl font-normal max-w-md self-center md:self-end">
+              <div className="text-2xl font-normal max-w-md self-center md:self-start">
                 A rede WAG tem um grande processo de parcerias e curadoria para
                 conectar você a diversas instituições, e agentes do bem que
                 precisam de ajuda.
               </div>
             </div>
-            <div className="flex flex-end md:mr-48">
-              <CellOnHandWithHand
-                className="hidden md:flex md:-mt-12"
-                aria-label="Cell on hand with hand"
-              />
-            </div>
           </div>
-          {/* fourth box */}
-          <div className="flex flex-col md:flex-row justify-center px-16 pt-9 mb-20">
-            <div className="flex flex-col gap-36 mb-36">
-              <div className="flex flex-col text-custom-blue leading-tight gap-6 pt-20 max-w-md text-center md:text-right self-center md:self-end">
-                <div className="text-[2rem] font-semibold">
-                  Uma plataforma que conecta quem quer ajudar com quem precisa
-                  de ajuda.
-                </div>
-                <div className="text-2xl font-normal">
-                  Através do app WAG você tem acesso e pode contribuir com
-                  diversas causas sem nenhum tipo de custo.
-                </div>
+          {/* third box */}
+          <div className="flex flex-col md:flex-row justify-center px-16 pt-16 md:pt-20 pb-40">
+            <div className="flex flex-col content-start text-custom-blue leading-tight gap-y-6 max-w-sm self-center md:self-start text-center md:text-right md:mt-64">
+              <div className="text-[2rem] font-semibold">
+                Uma plataforma que conecta quem quer ajudar com quem precisa de
+                ajuda.
               </div>
-              <div className="flex flex-col items-center gap-6">
-                <div className="text-custom-gray font-bold text-2xl max-w-48">
-                  Faça doações e ajude pessoas e instituições
-                </div>
-                <Hands aria-label="Hands touching" />
+              <div className="text-2xl font-normal">
+                Através do app WAG você tem acesso e pode contribuir com
+                diversas causas sem nenhum tipo de custo.
               </div>
             </div>
-            <div className="flex flex-col pr-20">
+            <div className="flex flex-col mt-16 md:mt-44 ml-9">
               <AppSearchScreenshot
                 className="hidden md:flex"
                 aria-label="App search screenshot"
               />
             </div>
-            <div className="flex flex-col justify-center md:justify-end">
-              <div className="flex flex-col gap-y-8 items-center md:items-start pl-0 md:pl-10">
+            <div className="flex flex-col md:items-start">
+              <div className="flex flex-col items-center gap-y-6 ml:0 md:-ml-8">
+                <div className="text-custom-gray font-bold text-2xl max-w-48">
+                  Faça doações e ajude pessoas e instituições
+                </div>
+                <Hands aria-label="Hands touching" />
+              </div>
+              <div className="flex flex-col items-center gap-y-6 ml-0 md:ml-12 mt-16 md:mt-72">
                 <div className="text-custom-gray font-bold text-2xl max-w-52">
                   Compartilhe iniciativas do bem
                 </div>
                 <HandsFistbump aria-label="Hands fistbump" />
               </div>
-              <div className="flex flex-col text-custom-blue leading-tight gap-y-6 items-center md:items-start text-center md:text-left pt-20">
+              <div className="flex flex-col text-custom-blue leading-tight gap-y-6 items-center md:items-start text-center md:text-left pt-10 ml-0 md:ml-2">
                 <div className="text-[2rem] font-semibold max-w-sm">
                   Na WAG é mais fácil compartilhar o bem
                 </div>
