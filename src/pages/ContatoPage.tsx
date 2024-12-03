@@ -6,6 +6,7 @@ import { useState } from "react";
 import Checkbox from "../components/Checkbox";
 import InputText from "../components/InputText";
 import { FormData } from "../services/form-api";
+import { toast } from "react-toastify";
 
 const ContatoPage = ({ sendForm }: { sendForm: (form: FormData) => void }) => {
   const [name, setName] = useState<string>("");
@@ -33,6 +34,8 @@ const ContatoPage = ({ sendForm }: { sendForm: (form: FormData) => void }) => {
     };
 
     sendForm(form);
+
+    toast.success("Form sent successfully!");
   };
 
   return (
