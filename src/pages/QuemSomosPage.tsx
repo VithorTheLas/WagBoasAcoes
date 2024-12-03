@@ -1,18 +1,18 @@
 import Hands from "../assets/images/hands.svg?react";
 import WagComoFazemos from "../assets/images/wag-como-fazemos.svg?react";
+import WagVideo from "../assets/videos/2024_FILME_WAG_V5.mp4";
 
 const QuemSomosPage = () => {
   return (
     <>
       <div className="flex flex-col px-6 md:px-16">
-        <iframe
+        <video
           className="h-[37.5rem] w-auto rounded-3xl mt-16"
-          src="https://www.youtube.com/embed/6tjm65z_dCg"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
+          src={WagVideo}
+          title="Wag Video"
+          autoPlay={false}
+          controls
+        ></video>
         <div className="flex flex-col md:flex-row justify-center gap-y-8 md:gap-x-40 px-6 mt-24">
           <div className="flex flex-col space-y-9 text-white text-left justify-center">
             <div className="font-semibold text-6xl max-w-xs leading-tight">
