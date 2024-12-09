@@ -48,3 +48,7 @@ export default tseslint.config({
   },
 })
 ```
+
+# Form Bold
+
+This site uses [Form Bold](https://formbold.com/) to handle the form submission on Contato page. You should create an account and update the form bold link following their Quickstart guide so you can receive the forms submissions on your desired email.
