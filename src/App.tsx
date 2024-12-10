@@ -15,7 +15,8 @@ import { FormData } from "./services/form-api";
 
 function App() {
   const sendFormInfo = async (formData: FormData) => {
-    const res = await fetch("https://formbold.com/s/6l2ae", {
+    const FORM_LINK = import.meta.env.VITE_FORM_BOLD_LINK;
+    const res = await fetch(FORM_LINK, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

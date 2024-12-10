@@ -32,7 +32,7 @@ const HomePage = () => {
           <div className="font-semibold text-5xl mt-12">Baixe o app</div>
           <div className="flex mt-8 space-x-4 self-center">
             <a
-              href="https://play.google.com/store/apps/details?id=com.guaranadigital.wag"
+              href={import.meta.env.VITE_PLAY_STORE_LINK}
               rel="noreferrer"
               target="_blank"
             >
@@ -42,7 +42,7 @@ const HomePage = () => {
               />
             </a>
             <a
-              href="https://apps.apple.com/us/app/wearegood/id1516113992"
+              href={import.meta.env.VITE_APPLE_STORE_LINK}
               rel="noreferrer"
               target="_blank"
             >

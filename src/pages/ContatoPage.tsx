@@ -56,7 +56,7 @@ const ContatoPage = ({ sendForm }: { sendForm: (form: FormData) => void }) => {
           <div className="font-bold pt-5">REDES SOCIAIS</div>
           <div className="flex gap-x-8">
             <a
-              href="https://www.instagram.com/wag_rededobem?igsh=aTl1dGs3enRoaGV0"
+              href={import.meta.env.VITE_INSTAGRAM_LINK}
               rel="noreferrer"
               target="_blank"
             >
@@ -67,7 +67,7 @@ const ContatoPage = ({ sendForm }: { sendForm: (form: FormData) => void }) => {
               />
             </a>
             <a
-              href="https://wa.me/5551995245265"
+              href={import.meta.env.VITE_WHATSAPP_LINK}
               rel="noreferrer"
               target="_blank"
             >
