@@ -37,7 +37,7 @@ const ComoFuncionaPage = () => {
             </div>
             <a
               className="flex flex-col text-center gap-3 items-center"
-              href="https://www.instagram.com/wag_rededobem?igsh=aTl1dGs3enRoaGV0"
+              href={import.meta.env.VITE_INSTAGRAM_LINK}
               rel="noreferrer"
               target="_blank"
             >
